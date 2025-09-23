@@ -199,6 +199,7 @@ text-align: center;
     .wrapper {
       padding-left: 1em;
       padding-right: 1em;
+      text-align: center;
 
       @include breakpoint($x-large) {
         max-width: $x-large;
@@ -284,4 +285,256 @@ text-align: center;
     background-repeat: repeat-y;
     background-attachment: scroll;
   }
+}
+
+.bg-overlay {
+  &::after {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.bg-overlay-dark {
+  &::after {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.bg-overlay-primary {
+  &::after {
+    background-color: rgba($primary-color, 0.8);
+  }
+}
+
+.bg-overlay-secondary {
+  &::after {
+    background-color: rgba($link-color, 0.8);
+  }
+}
+
+.bg-overlay-tertiary {
+  &::after {
+    background-color: rgba($tertiary-color, 0.8);
+  }
+}
+
+.bg-overlay-quaternary {
+  &::after {
+    background-color: rgba($quaternary-color, 0.8);
+  }
+}
+
+.bg-overlay-gradient-dark {
+  &::after {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+  }
+}
+
+.bg-overlay-gradient-primary {
+  &::after {
+    background-image: linear-gradient(to bottom, rgba($primary-color, 0.9), rgba($primary-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-secondary {
+  &::after {
+    background-image: linear-gradient(to bottom, rgba($link-color, 0.9), rgba($link-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-tertiary {
+  &::after {
+    background-image: linear-gradient(to bottom, rgba($tertiary-color, 0.9), rgba($tertiary-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-quaternary {
+  &::after {
+    background-image: linear-gradient(to bottom, rgba($quaternary-color, 0.9), rgba($quaternary-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-radial-dark {
+  &::after {
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
+  }
+}
+
+.bg-overlay-gradient-radial-primary {
+  &::after {
+    background-image: radial-gradient(ellipse at center, rgba($primary-color, 0.1), rgba($primary-color, 0.9));
+  }
+}
+
+.bg-overlay-gradient-radial-secondary {
+  &::after {
+    background-image: radial-gradient(ellipse at center, rgba($link-color, 0.1), rgba($link-color, 0.9));
+  }
+}
+
+.bg-overlay-gradient-radial-tertiary {
+  &::after {
+    background-image: radial-gradient(ellipse at center, rgba($tertiary-color, 0.1), rgba($tertiary-color, 0.9));
+  }
+}
+
+.bg-overlay-gradient-radial-quaternary {
+  &::after {
+    background-image: radial-gradient(ellipse at center, rgba($quaternary-color, 0.1), rgba($quaternary-color, 0.9));
+  }
+}
+
+.bg-overlay-gradient-horizontal-dark {
+  &::after {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+  }
+}
+
+.bg-overlay-gradient-horizontal-primary {
+  &::after {
+    background-image: linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-horizontal-secondary {
+  &::after {
+    background-image: linear-gradient(to right, rgba($link-color, 0.9), rgba($link-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-horizontal-tertiary {
+  &::after {
+    background-image: linear-gradient(to right, rgba($tertiary-color, 0.9), rgba($tertiary-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-horizontal-quaternary {
+  &::after {
+    background-image: linear-gradient(to right, rgba($quaternary-color, 0.9), rgba($quaternary-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-diagonal-dark {
+  &::after {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+  }
+}
+
+.bg-overlay-gradient-primary {
+  &::after {
+    background-image: linear-gradient(45deg, rgba($primary-color, 0.9), rgba($primary-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-secondary {
+  &::after {
+    background-image: linear-gradient(45deg, rgba($link-color, 0.9), rgba($link-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-tertiary {
+  &::after {
+    background-image: linear-gradient(45deg, rgba($tertiary-color, 0.9), rgba($tertiary-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-quaternary {
+  &::after {
+    background-image: linear-gradient(45deg, rgba($quaternary-color, 0.9), rgba($quaternary-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-cross-dark {
+  &::after {
+    background-image: linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+  }
+}
+
+.bg-overlay-gradient-cross-primary {
+  &::after {
+    background-image: linear-gradient(0, rgba($primary-color, 0.9), rgba($primary-color, 0.1)), linear-gradient(90deg, rgba($primary-color, 0.9), rgba($primary-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-cross-secondary {
+  &::after {
+    background-image: linear-gradient(0, rgba($link-color, 0.9), rgba($link-color, 0.1)), linear-gradient(90deg, rgba($link-color, 0.9), rgba($link-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-cross-tertiary {
+  &::after {
+    background-image: linear-gradient(0, rgba($tertiary-color, 0.9), rgba($tertiary-color, 0.1)), linear-gradient(90deg, rgba($tertiary-color, 0.9), rgba($tertiary-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-cross-quaternary {
+  &::after {
+    background-image: linear-gradient(0, rgba($quaternary-color, 0.9), rgba($quaternary-color, 0.1)), linear-gradient(90deg, rgba($quaternary-color, 0.9), rgba($quaternary-color, 0.1));
+  }
+}
+
+.bg-overlay-gradient-elliptical-dark {
+  &::after {
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
+  }
+}
+
+.bg-overlay-gradient-elliptical-primary {
+  &::after {
+    background-image: radial-gradient(ellipse at center, rgba($primary-color, 0.1), rgba($primary-color, 0.9));
+  }
+}
+
+.bg-overlay-gradient-elliptical-secondary {
+  &::after {
+    background-image: radial-gradient(ellipse at center, rgba($link-color, 0.1), rgba($link-color, 0.9));
+  }
+}
+
+.bg-overlay-gradient-elliptical-tertiary {
+  &::after {
+    background-image: radial-gradient(ellipse at center, rgba($tertiary-color, 0.1), rgba($tertiary-color, 0.9));
+  }
+}
+
+.bg-overlay-gradient-elliptical-quaternary {
+  &::after {
+    background-image: radial-gradient(ellipse at center, rgba($quaternary-color, 0.1), rgba($quaternary-color, 0.9));
+  }
+}
+
+.bg-overlay-gradient-silhuette-dark {
+  &::after {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.9) 100%);
+  }
+}
+
+.bg-overlay-gradient-silhuette-primary {
+  &::after {
+    background-image: linear-gradient(to bottom, rgba($primary-color, 0.9) 0%, rgba($primary-color, 0.1) 50%, rgba($primary-color, 0.9) 100%);
+  }
+}
+
+.bg-overlay-gradient-silhuette-secondary {
+  &::after {
+    background-image: linear-gradient(to bottom, rgba($link-color, 0.9) 0%, rgba($link-color, 0.1) 50%, rgba($link-color, 0.9) 100%);
+  }
+}
+
+.bg-overlay-gradient-silhuette-tertiary {
+  &::after {
+    background-image: linear-gradient(to bottom, rgba($tertiary-color, 0.9) 0%, rgba($tertiary-color, 0.1) 50%, rgba($tertiary-color, 0.9) 100%);
+  }
+}
+
+.bg-overlay-gradient-silhuette-quaternary {
+  &::after {
+    background-image: linear-gradient(to bottom, rgba($quaternary-color, 0.9) 0%, rgba($quaternary-color, 0.1) 50%, rgba($quaternary-color, 0.9) 100%);
+  }
+}
+.page__title--painted {
+  background: $primary-color;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+  display: inline-block;
 }

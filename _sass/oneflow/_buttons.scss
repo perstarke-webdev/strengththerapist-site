@@ -46,7 +46,12 @@
       }
 
         @if ($buttoncolor == light-outline) {
-          border: 1px solid #fff;
+          border: 2px solid $primary-color;
+          color: #fff !important;
+          &:hover {
+            background: $primary-color;
+            color: mix(#fff, $primary-color, 50%) !important;
+          }
         }
 
       &:visited {
