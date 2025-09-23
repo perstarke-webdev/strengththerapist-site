@@ -25,5 +25,10 @@ section.first-section {
 }
 
 section.alternative-color {
-    background-color: mix($background-color, $primary-color, 50%);
+    background-color: #000;
+    color: #fff !important;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #fff !important;
+    }
 }

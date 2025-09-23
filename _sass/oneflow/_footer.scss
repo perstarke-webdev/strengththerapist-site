@@ -108,14 +108,27 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background: $link-color;
+    background: $primary-color;
   }
 }
 
 .footer-icon {
-  color: $footer-background-color !important;
+  color: #fff !important;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: color 0.3s ease;
+}
+
+.socials__item__link:hover .footer-icon {
+  color: #000 !important;
+}
+
+.page__footer-follow a {
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: $primary-color;
+    text-decoration: none;
+  }
 }
