@@ -278,6 +278,8 @@ body:hover .visually-hidden button {
 .itr-image-container {
     margin-right: 20px;
     margin-left: 20px;
+    border-radius: 5px;
+    overflow: hidden; /* Added to ensure content is clipped by border-radius */
 }
 
 .itr-text {
