@@ -128,9 +128,21 @@ $(function() {
       var anchor = document.createElement("a");
       anchor.className = 'header-link';
       anchor.href = '#' + id;
-      anchor.innerHTML = '<span class=\"sr-only\">Permalink</span><i class=\"fas fa-link\"></i>';
+      anchor.innerHTML = '<span class="sr-only">Permalink</span><i class="fas fa-link"></i>';
       anchor.title = "Permalink";
       $(this).append(anchor);
     }
+  });
+
+  // Slick Carousel init
+  $('.testimonial-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 5000,
+      arrows: false
   });
 });
