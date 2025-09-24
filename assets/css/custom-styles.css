@@ -21,7 +21,7 @@
 }
 
 #zusammenarbeit .box .price {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
     color: #333;
     margin: 10px 0;
@@ -47,4 +47,8 @@
 #zusammenarbeit .box ul li i {
     color: #ab1f1d;
     margin-right: 10px;
+}
+
+#zusammenarbeit h2 > i {
+    color: #ab1f1d;
 }
