@@ -1,1 +1,50 @@
 /* Custom stylesheet, add your own styles here */
+
+/* Zusammenarbeit Section */
+#zusammenarbeit .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#zusammenarbeit .box {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+#zusammenarbeit .box h4 {
+    margin-top: 0;
+}
+
+#zusammenarbeit .box .price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+#zusammenarbeit .box .price-info {
+    font-size: 0.5em;
+    font-weight: normal;
+    color: #777;
+}
+
+#zusammenarbeit .box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#zusammenarbeit .box ul li {
+    margin-bottom: 10px;
+}
+
+#zusammenarbeit .box ul li i {
+    color: #ab1f1d;
+    margin-right: 10px;
+}
